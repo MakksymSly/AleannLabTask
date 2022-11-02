@@ -1,3 +1,9 @@
+#Description:
+In this project i used React, Redux, TailWind.css, and do it with class commponents.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
