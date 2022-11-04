@@ -1,7 +1,7 @@
 import React from "react";
 import { setCurrentPageAC, setJobsAC } from '../../redux/mainPageReducer';
 import { connect } from 'react-redux';
-import MainPage from './mainPage';
+import MainPageApiComponent from './mainPageApiComponent';
 
 
 let mapStateToProps = (state) => {
@@ -25,5 +25,5 @@ let mapDispatchToProps = (dispatch) => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainPageApiComponent);
 

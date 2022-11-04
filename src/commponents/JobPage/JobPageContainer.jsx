@@ -1,7 +1,7 @@
 import React from "react";
 import { setJobsAC, setCurrentJobAC } from '../../redux/jobPageReducer';
 import { connect } from 'react-redux';
-import JobPage from './JobPage';
+import JobPageApiComponent from './JobPageApiComponent';
 
 
 let mapStateToProps = (state) => {
@@ -24,5 +24,5 @@ let mapDispatchToProps = (dispatch) => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(JobPage);
+export default connect(mapStateToProps, mapDispatchToProps)(JobPageApiComponent);
 
