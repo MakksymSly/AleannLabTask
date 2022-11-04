@@ -20,7 +20,7 @@ export const Pagination = (props) => {
     return (
         <div className='flex justify-center '>
 
-            <div className='bg-white flex rounded-2xl  justify-center h-a'>
+            <div className='bg-white flex rounded-2xl  justify-center h-a tablet:w-full desktop:w-auto'>
                 <div className='flex p-1'>
                 <button onClick={prevPage} className='w-3 m-3 '><img src={leftArrow} alt="arrow" /></button>
                 <div className=' w-1  h-auto mt-2 border-zinc-400 border-r-2'></div>

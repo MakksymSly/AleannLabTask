@@ -6,7 +6,7 @@ import JobPageContainer from './commponents/JobPage/JobPageContainer';
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/AleannLabTask'>
       <div className="App">
         <Routes>
           <Route path='' element={<MainPageContainer />} />

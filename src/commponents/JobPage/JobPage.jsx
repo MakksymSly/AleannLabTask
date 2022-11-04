@@ -18,20 +18,20 @@ let key = 0;
 
 
 class JobPage extends React.Component {
-
-  constructor(props) {
-    super(props);
+  componentDidMount() {
     let id = Object.values(this.props.params);
     axios.get('https://api.json-generator.com/templates/ZM1r0eic3XEy/data?access_token=wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu').then(response => {
       this.props.setCurrentJob(response.data[id[0] - 1])
 
     });
-  }
+    
+}
 
   render() {
+    console.log(this.props.currentJob.length)
     if (this.props.currentJob.length != []) {
       return (
-        <div className="bg-white h-full">
+        <div className="bg-white h-full tablet:pl-3">
           <div className="bg-white md:container md:mx-auto">
             <div className=" border-b-2 flex justify-between w-3/4 pt-10 ">
               <div className="text-title text-2xl font-bold">Job Details</div>
@@ -108,6 +108,7 @@ class JobPage extends React.Component {
               <div className="text-lg mb-5">{this.props.currentJob.email}</div>
             </div>
             <img className="h-full rounded-b-xl" src={map} alt="img" />
+            <div></div>
           </div>
         </div>
 
