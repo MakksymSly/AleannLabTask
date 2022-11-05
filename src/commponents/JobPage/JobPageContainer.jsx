@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { setJobsAC, setCurrentJobAC } from '../../redux/jobPageReducer';
 import { connect } from 'react-redux';
 import JobPageApiComponent from './JobPageApiComponent';

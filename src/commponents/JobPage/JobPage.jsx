@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { NavLink } from 'react-router-dom'
 // IMAGES
 import ribbon from './../../img/ribbon.png'

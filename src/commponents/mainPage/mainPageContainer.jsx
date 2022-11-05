@@ -1,5 +1,5 @@
-import React from "react";
-import { setCurrentPageAC, setJobsAC } from '../../redux/mainPageReducer';
+import React from 'react';
+import { setCurrentPageAC, setJobsAC, setIsFetchingAC } from '../../redux/mainPageReducer';
 import { connect } from 'react-redux';
 import MainPageApiComponent from './mainPageApiComponent';
 
@@ -10,6 +10,7 @@ let mapStateToProps = (state) => {
       postPerPage: state.mainPage.postPerPage,
       totalJobsCount: state.mainPage.totalJobsCount,
       currentPage:state.mainPage.currentPage,
+      isFetching:state.mainPage.isFetching,
 
    }
 }
@@ -20,6 +21,9 @@ let mapDispatchToProps = (dispatch) => {
       },
       setPage: (page)=>{
          dispatch(setCurrentPageAC(page))
+      },
+      toggleIsFetching: (isFetching)=>{
+         dispatch(setIsFetchingAC(isFetching))
       }
    }
 }

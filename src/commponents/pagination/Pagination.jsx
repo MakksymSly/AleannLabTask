@@ -23,7 +23,7 @@ export const Pagination = (props) => {
             <div className='bg-white flex rounded-2xl  justify-center h-a tablet:w-full desktop:w-auto'>
                 <div className='flex p-1'>
                 <button onClick={prevPage} className='w-3 m-3 '><img src={leftArrow} alt="arrow" /></button>
-                <div className=' w-1  h-auto mt-2 border-zinc-400 border-r-2'></div>
+                <div className=' w-1  h-5 mt-2 border-zinc-400 border-r-2'></div>
                 <div className=' ml-5 mr-5'>   
                 {
 
@@ -32,7 +32,7 @@ export const Pagination = (props) => {
                     })
                 }
                 </div>
-                <div className='w-1  h-6 mt-2 border-zinc-400 border-l-2	'></div>
+                <div className='w-1  h-5 mt-2 border-zinc-400 border-l-2	'></div>
                 <button onClick={nextPage} className='w-3 m-3 '><img src={rightArrow} alt="arrow" /></button>
                 </div>
                 

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import axios from 'axios';
-import JobPage from "./JobPage";
-import { useParams } from "react-router-dom";
+import JobPage from './JobPage';
+import { useParams } from 'react-router-dom';
 
 
 function withParams(Component) {
